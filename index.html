@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>⚡ SojiMelBet · HOT DEALS 🔥</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .offer-card {
+            background: rgba(25, 15, 45, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 2.5rem;
+            border: 1px solid rgba(180, 130, 255, 0.5);
+            padding: 2.2rem 2rem;
+            max-width: 1400px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(170, 120, 255, 0.3) inset, 0 0 40px rgba(138, 43, 226, 0.3);
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #c77dff, #ff6b9d, #ffd166);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.3rem;
+        }
+        h1 i { background: none; font-size: 2.2rem; color: #e0aaff; filter: drop-shadow(0 0 8px #c77dff); -webkit-text-fill-color: #e0aaff; }
+        .sub-head {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #d4b8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-bottom: 1px dashed rgba(180, 130, 255, 0.5);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .popup-settings-wrapper { text-align: center; margin-bottom: 1rem; }
+        .popup-settings-btn {
+            background: linear-gradient(135deg, #ff9800, #f44336);
+            border: none;
+            border-radius: 40px;
+            padding: 12px 28px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .popup-settings-btn:hover { transform: scale(1.05); box-shadow: 0 0 35px rgba(255, 152, 0, 0.8); }
+        .popup-note { display: block; color: #ffcc80; font-size: 0.8rem; margin-top: 6px; }
+        .settings-panel {
+            background: rgba(40, 20, 70, 0.5);
+            border-radius: 20px;
+            padding: 15px 20px;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border: 1px solid #b47aff44;
+        }
+        .settings-panel label { color: #e0aaff; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+        .settings-panel input {
+            width: 70px;
+            padding: 8px 12px;
+            border-radius: 30px;
+            border: 2px solid #c77dff;
+            background: #1a0b2e;
+            color: #ffd166;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            outline: none;
+        }
+        .settings-panel input:focus { border-color: #ffd166; box-shadow: 0 0 12px #ffd16655; }
+        .settings-panel input.limit-input {
+            width: 60px;
+            padding: 6px 8px;
+            font-size: 0.9rem;
+            border-color: #06d6a0;
+        }
+        .settings-panel input.limit-input:focus { border-color: #06d6a0; box-shadow: 0 0 12px #06d6a055; }
+        .save-btn {
+            background: linear-gradient(135deg, #06d6a0, #0d5240);
+            border: none;
+            border-radius: 30px;
+            padding: 8px 18px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .save-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px #06d6a0; }
+        .auto-click-wrapper { text-align: center; margin-bottom: 1.5rem; }
+        .auto-click-btn {
+            background: linear-gradient(135deg, #ff6b9d, #c77dff);
+            border: none;
+            border-radius: 60px;
+            padding: 1rem 2.5rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(255, 107, 157, 0.6);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        .auto-click-btn:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(255, 107, 157, 0.9); }
+        .auto-click-btn:disabled { background: #555; cursor: not-allowed; box-shadow: none; opacity: 0.6; }
+        .auto-status { display: block; margin-top: 10px; color: #ffd166; font-weight: 600; font-size: 0.95rem; min-height: 22px; }
+        .click-dashboard {
+            background: rgba(40, 20, 70, 0.6);
+            border-radius: 60px;
+            padding: 0.8rem 2rem;
+            margin-bottom: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px 25px;
+            border: 1px solid #b47aff66;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(180, 122, 255, 0.2);
+        }
+        .total-clicks { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.3rem; color: #f0e2ff; }
+        .total-clicks i { font-size: 2rem; color: #ffb3c6; filter: drop-shadow(0 0 6px #ff6b9d); }
+        .click-badge {
+            background: #1a0b2ecc;
+            backdrop-filter: blur(4px);
+            padding: 8px 28px;
+            border-radius: 50px;
+            border: 1px solid #ffd166;
+            box-shadow: 0 0 15px #ffd16633;
+        }
+        .click-badge span { font-weight: 800; font-size: 2.2rem; color: #ffd166; margin-left: 10px; letter-spacing: 1px; }
+        .legend { display: flex; gap: 20px; font-size: 0.9rem; font-weight: 500; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-dot { width: 16px; height: 16px; border-radius: 20px; background: #9d4edd; box-shadow: 0 0 8px #c77dff; }
+        .legend-dot.used { background: #06d6a0; box-shadow: 0 0 12px #06d6a0; }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+        .offer-btn {
+            background: linear-gradient(135deg, #3c1e6b, #2a1548);
+            border: none;
+            border-radius: 60px;
+            padding: 0.85rem 0.6rem;
+            color: #f5edff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 0 1.5px #7b2cbf inset;
+            width: 100%;
+            text-decoration: none;
+            position: relative;
+            border: 1px solid #9d4edd55;
+        }
+        .offer-btn i { font-size: 1.2rem; color: #ffb3c6; }
+        .click-counter {
+            background: #1a0b2e;
+            border-radius: 40px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #ffd166;
+            border: 1px solid #ffb347;
+            margin-left: 4px;
+        }
+        .offer-btn.clicked { background: linear-gradient(135deg, #0d5240, #073b2e); border: 1.5px solid #06d6a0; box-shadow: 0 0 18px #06d6a0, 0 0 0 1.5px #ffd166 inset; }
+        .offer-btn.clicked i { color: #ffea9f; }
+        .offer-btn.clicked .click-counter { background: #0a3328; color: #ffeaa6; border-color: #ffd966; }
+        .offer-btn:hover { transform: translateY(-4px) scale(1.03); background: linear-gradient(135deg, #5a2ca0, #3c1e6b); box-shadow: 0 18px 28px -8px black, 0 0 0 2.5px #e0aaff inset; }
+        .section-label { font-size: 1.15rem; margin: 18px 0 8px; color: #e0aaff; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+        .section-label i { color: #ffb3c6; }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color: #cbb2ff;
+            border-top: 1px solid #b47aff66;
+            padding-top: 1.4rem;
+            font-size: 0.9rem;
+        }
+        .reset-link {
+            background: none;
+            border: 1.5px solid #e0aaff;
+            padding: 8px 22px;
+            border-radius: 50px;
+            color: #f0d6ff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        .reset-link:hover { background: #b47aff30; border-color: #ffd166; color: #ffeaaf; }
+        @media (max-width: 700px) {
+            .offer-card { padding: 1.5rem 1.2rem; }
+            h1 { font-size: 2rem; }
+            .click-dashboard { flex-direction: column; align-items: stretch; border-radius: 40px; padding: 1.2rem; }
+            .btn-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+            .offer-btn { padding: 0.7rem 0.5rem; font-size: 0.8rem; }
+            .auto-click-btn { font-size: 1rem; padding: 0.8rem 1.8rem; }
+            .settings-panel { flex-direction: column; gap: 10px; }
+            .popup-settings-btn { font-size: 0.9rem; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="offer-card">
+    <h1><i class="fas fa-crown"></i> SojiMelBet DEAL ZONE <i class="fas fa-bolt"></i></h1>
+    <div class="sub-head"><i class="fas fa-fire-flame-curved"></i> 32 PREMIUM OFFERS · ALL ACTIVE <i class="fas fa-gem"></i></div>
+
+    <div class="popup-settings-wrapper">
+        <button class="popup-settings-btn" onclick="openPopupSettings()"><i class="fas fa-cog"></i> ALLOW POPUPS FIRST (OPEN SETTINGS)</button>
+        <span class="popup-note">Click → Copy URL → Open new tab → Paste → Allow → Then START</span>
+    </div>
+
+    <div class="settings-panel">
+        <label for="roundInput">ROUNDS:</label>
+        <input type="number" id="roundInput" value="3" min="1" max="100" onchange="saveRoundSetting()">
+        <label for="limitInput">LIMIT:</label>
+        <input type="number" id="limitInput" class="limit-input" value="0" min="0" max="9999" placeholder="0=∞" onchange="saveRoundSetting()">
+        <button class="save-btn" onclick="saveRoundSetting()">SAVE</button>
+        <span style="color:#06d6a0;font-size:0.85rem;" id="saveConfirm"></span>
+    </div>
+
+    <div class="auto-click-wrapper">
+        <button class="auto-click-btn" id="autoClickBtn" onclick="startAutoClick()">START AUTO CLICK</button>
+        <div class="auto-status" id="autoStatus">Ready · <span id="roundDisplay">3</span> round(s) · limit <span id="limitDisplay">∞</span></div>
+    </div>
+
+    <div class="click-dashboard">
+        <div class="total-clicks"><i class="fas fa-chart-pie"></i><span>TOTAL CLAIMS</span></div>
+        <div class="click-badge"><i class="fas fa-fingerprint"></i> <span id="globalCounter">0</span></div>
+        <div class="legend"><div class="legend-item"><span class="legend-dot"></span> available</div><div class="legend-item"><span class="legend-dot used"></span> claimed</div></div>
+    </div>
+
+    <div class="section-label"><i class="fas fa-star"></i> HOT PREMIUM DEALS <i class="fas fa-star"></i></div>
+    <div class="btn-grid" id="offerGrid">
+        <!-- 1 -->
+        <a href="https://spaceshipgoldenthou.com/v8jqicvspd?key=4d93aace7ea05a128378e4cc93044476" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_1" bn="1"><i class="fas fa-circle-dot"></i> SOJIMELBET NEUTRON 1 <span class="click-counter" id="count_1">0</span></a>
+        <!-- 2 -->
+        <a href="https://spaceshipgoldenthou.com/b0wm8fusaz?key=904406e6e77764e979327b051b430818" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_2" bn="2"><i class="fas fa-dove"></i> SOJIMELBET HAWK 2 <span class="click-counter" id="count_2">0</span></a>
+        <!-- 3 -->
+        <a href="https://spaceshipgoldenthou.com/b51spk2k9s?key=8bccfbdd5ece8199764cd8007c7db54f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_3" bn="3"><i class="fas fa-paw"></i> SOJIMELBET WOLF 3 <span class="click-counter" id="count_3">0</span></a>
+        <!-- 4 -->
+        <a href="https://spaceshipgoldenthou.com/gn5s57pjeg?key=0fd46d1363ae92371b184d2ae2072f4c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_4" bn="4"><i class="fas fa-car-side"></i> SOJIMELBET SIDE 4 <span class="click-counter" id="count_4">0</span></a>
+        <!-- 5 -->
+        <a href="https://spaceshipgoldenthou.com/khej5mip?key=9211f0d8249a8505cea7b346ac4563f9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_5" bn="5"><i class="fas fa-fire"></i> SOJIMELBET INFERNO 5 <span class="click-counter" id="count_5">0</span></a>
+        <!-- 6 -->
+        <a href="https://spaceshipgoldenthou.com/hi6b369f?key=a8ba8b5243b6999ad602d27976ec0fde" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_6" bn="6"><i class="fas fa-glass-whiskey"></i> SOJIMELBET DRINK 6 <span class="click-counter" id="count_6">0</span></a>
+        <!-- 7 -->
+        <a href="https://spaceshipgoldenthou.com/u4srrzvc?key=e9f5e68e0ba5b1bd1be8527e107cdbc3" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_7" bn="7"><i class="fas fa-dove"></i> SOJIMELBET FALCON 7 <span class="click-counter" id="count_7">0</span></a>
+        <!-- 8 -->
+        <a href="https://spaceshipgoldenthou.com/uekbctbfkc?key=d6bdbfea6cd44b5425b36810354b15bc" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_8" bn="8"><i class="fas fa-crosshairs"></i> SOJIMELBET HUNTER 8 <span class="click-counter" id="count_8">0</span></a>
+        <!-- 9 -->
+        <a href="https://spaceshipgoldenthou.com/ehs2yyr6gg?key=21af0f7fefe688bca091fd8c3dbe02dc" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_9" bn="9"><i class="fas fa-ghost"></i> SOJIMELBET SPIRIT 9 <span class="click-counter" id="count_9">0</span></a>
+        <!-- 10 -->
+        <a href="https://spaceshipgoldenthou.com/acnn6y776?key=a0ea390616c7cb032ccbd6186e98bde6" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_10" bn="10"><i class="fas fa-hat-wizard"></i> SOJIMELBET WITCH 10 <span class="click-counter" id="count_10">0</span></a>
+        <!-- 11 -->
+        <a href="https://spaceshipgoldenthou.com/ybkpe0zzq?key=a6d28d803e870f599d84c5339d0df25f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_11" bn="11"><i class="fas fa-ghost"></i> SOJIMELBET GHOST 11 <span class="click-counter" id="count_11">0</span></a>
+        <!-- 12 -->
+        <a href="https://spaceshipgoldenthou.com/r8bzkqnyne?key=5574b3e0a5dfc87d5210fe7cfbfca9a0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_12" bn="12"><i class="fas fa-fire"></i> SOJIMELBET PHOENIX 12 <span class="click-counter" id="count_12">0</span></a>
+        <!-- 13 -->
+        <a href="https://spaceshipgoldenthou.com/kb4ywsta9y?key=140e838d45f42ec7c39bc1aece7fc5df" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_13" bn="13"><i class="fas fa-mountain"></i> SOJIMELBET TITAN 13 <span class="click-counter" id="count_13">0</span></a>
+        <!-- 14 -->
+        <a href="https://spaceshipgoldenthou.com/p7jkz6mg?key=48ea1ef7ea0963bfef35f8a0428fb3a1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_14" bn="14"><i class="fas fa-tv"></i> SOJIMELBET TV 14 <span class="click-counter" id="count_14">0</span></a>
+        <!-- 15 -->
+        <a href="https://spaceshipgoldenthou.com/dymm79eqjq?key=4681559313b61457897a29ff06b42669" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_15" bn="15"><i class="fas fa-hat-wizard"></i> SOJIMELBET WIZARD 15 <span class="click-counter" id="count_15">0</span></a>
+        <!-- 16 -->
+        <a href="https://spaceshipgoldenthou.com/netix7r8nn?key=8d659b9eeb82aee95d8a5e1132888219" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_16" bn="16"><i class="fas fa-ghost"></i> SOJIMELBET PHANTOM 16 <span class="click-counter" id="count_16">0</span></a>
+        <!-- 17 -->
+        <a href="https://spaceshipgoldenthou.com/hzg60tgtp?key=0064155d23449d4a91b96a4bde531661" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_17" bn="17"><i class="fas fa-paw"></i> SOJIMELBET LION 17 <span class="click-counter" id="count_17">0</span></a>
+        <!-- 18 -->
+        <a href="https://spaceshipgoldenthou.com/fq8iacdmv7?key=dffbf2408826ff1e255c0e80a48cd2e9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_18" bn="18"><i class="fas fa-horse"></i> SOJIMELBET HORSE 18 <span class="click-counter" id="count_18">0</span></a>
+        <!-- 19 -->
+        <a href="https://spaceshipgoldenthou.com/hdrhkt2ju?key=825fd36fac6a7364e31e760d75cdc566" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_19" bn="19"><i class="fas fa-rocket"></i> SOJIMELBET BOOST 19 <span class="click-counter" id="count_19">0</span></a>
+        <!-- 20 -->
+        <a href="https://spaceshipgoldenthou.com/hsue3rp0?key=46658491de11ab8b8f57808a3877f1ee" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_20" bn="20"><i class="fas fa-crosshairs"></i> SOJIMELBET SNIPER 20 <span class="click-counter" id="count_20">0</span></a>
+        <!-- 21 -->
+        <a href="https://spaceshipgoldenthou.com/tnx7sb48?key=e0b46f47ddaf2965761ddd6958b521e6" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_21" bn="21"><i class="fas fa-coins"></i> SOJIMELBET BRONZE 21 <span class="click-counter" id="count_21">0</span></a>
+        <!-- 22 -->
+        <a href="https://spaceshipgoldenthou.com/jf6qugyf9t?key=4c81e917c72a7388ccf51f233f04f68e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_22" bn="22"><i class="fas fa-forward"></i> SOJIMELBET RUSH 22 <span class="click-counter" id="count_22">0</span></a>
+        <!-- 23 -->
+        <a href="https://spaceshipgoldenthou.com/wwnz63bd?key=3bc6bab69c65bb1980647e2177458345" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_23" bn="23"><i class="fas fa-coffee"></i> SOJIMELBET COFFEE 23 <span class="click-counter" id="count_23">0</span></a>
+        <!-- 24 -->
+        <a href="https://spaceshipgoldenthou.com/dt1hghf72?key=e2ffaf559c2112ed04391b4005404396" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_24" bn="24"><i class="fas fa-rainbow"></i> SOJIMELBET PRISM 24 <span class="click-counter" id="count_24">0</span></a>
+        <!-- 25 -->
+        <a href="https://spaceshipgoldenthou.com/x1uezpde?key=19cffb81bd9aa8b6d4bfbf1cd4117490" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_25" bn="25"><i class="fas fa-bolt"></i> SOJIMELBET THUNDER 25 <span class="click-counter" id="count_25">0</span></a>
+        <!-- 26 -->
+        <a href="https://spaceshipgoldenthou.com/kxzgs3afc?key=9b94195b6db81022ff934ee25a04410c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_26" bn="26"><i class="fas fa-home"></i> SOJIMELBET HOME 26 <span class="click-counter" id="count_26">0</span></a>
+        <!-- 27 -->
+        <a href="https://spaceshipgoldenthou.com/vfjkutnmd?key=95e2766b42a03968b3f288a17c4ade1f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_27" bn="27"><i class="fas fa-coins"></i> SOJIMELBET SILVER 27 <span class="click-counter" id="count_27">0</span></a>
+        <!-- 28 -->
+        <a href="https://spaceshipgoldenthou.com/pw3uezjn8?key=a0e9cfd3844cc8180fddbdf0ba8b7275" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_28" bn="28"><i class="fas fa-gift"></i> SOJIMELBET BONUS 28 <span class="click-counter" id="count_28">0</span></a>
+        <!-- 29 -->
+        <a href="https://spaceshipgoldenthou.com/j82sd5ak7p?key=cdc508ce080bb09e31e678652822c8e4" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_29" bn="29"><i class="fas fa-leaf"></i> SOJIMELBET LEAF 29 <span class="click-counter" id="count_29">0</span></a>
+        <!-- 30 -->
+        <a href="https://spaceshipgoldenthou.com/fz54p8k5e?key=ef0c8e115b75ef88c9076686c1d9e4d1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_30" bn="30"><i class="fas fa-chess-queen"></i> SOJIMELBET QUEEN 30 <span class="click-counter" id="count_30">0</span></a>
+        <!-- 31 -->
+        <a href="https://spaceshipgoldenthou.com/dw36avdd4?key=88a3929fa88aeded8340ad861403ebb2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_31" bn="31"><i class="fas fa-bitcoin"></i> SOJIMELBET BTC 31 <span class="click-counter" id="count_31">0</span></a>
+        <!-- 32 -->
+        <a href="https://spaceshipgoldenthou.com/ic1brg69?key=9461340a027dbac4e4a3fa706043d28e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_32" bn="32"><i class="fas fa-fire"></i> SOJIMELBET BLAZE 32 <span class="click-counter" id="count_32">0</span></a>
+    </div>
+
+    <div class="card-footer">
+        <span><i class="far fa-clock"></i> 32 active deals · instant access</span>
+        <div class="reset-link" onclick="resetAllCounters()"><i class="fas fa-arrows-rotate"></i> reset counters</div>
+    </div>
+</div>
+
+<script>
+    const btnsTotal = 32;
+    let cMap = {};
+    for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0;
+    const STORE = 'mega_32_generated', RKEY = 'auto_rounds_v8', LKEY = 'auto_limit_v1';
+
+    function lCounts() { try { let s=localStorage.getItem(STORE); if(s) { let p=JSON.parse(s); for(let k in cMap) if(typeof p[k]==='number') cMap[k]=p[k]; } } catch(e){} }
+    function sCounts() { try { localStorage.setItem(STORE, JSON.stringify(cMap)); } catch(e){} }
+    function total() { return Object.values(cMap).reduce((a,b)=>a+b,0); }
+
+    function refresh() {
+        document.getElementById('globalCounter').innerText = total();
+        for (let i=1; i<=btnsTotal; i++) {
+            let cs = document.getElementById('count_'+i), b = document.getElementById('btn_'+i);
+            if (cs && b) { let v = cMap['btn_'+i]||0; cs.innerText = v; v>0 ? b.classList.add('clicked') : b.classList.remove('clicked'); }
+        }
+    }
+
+    function inc(id) { if(cMap.hasOwnProperty(id)) { cMap[id]++; refresh(); sCounts(); } }
+
+    function resetAllCounters() { for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0; refresh(); sCounts(); }
+
+    function openPopupSettings() {
+        let a = window.open('about:blank', '_blank');
+        if(a){a.document.write(`<html><head><title>Allow Popups</title><style>body{font-family:sans-serif;background:#1a0b2e;color:#fff;text-align:center;padding:40px;line-height:1.8;}.steps{background:#2d1b4e;padding:25px;border-radius:15px;display:inline-block;text-align:left;margin:20px;}.highlight{color:#ffd166;font-weight:bold;}code{background:#000;padding:4px 10px;border-radius:6px;color:#ffd166;font-size:16px;}button{background:#ff6b9d;color:#fff;border:none;padding:12px 30px;border-radius:30px;font-size:16px;cursor:pointer;margin-top:15px;}</style></head><body><h1>Allow Popups</h1><div class="steps"><p>Step 1: Copy URL:</p><p><code>chrome://settings/content/popups</code></p><p>Step 2: Open new tab (Ctrl+T)</p><p>Step 3: Paste & Enter</p><p>Step 4: Allow this site</p><p>Step 5: Come back & START</p></div><button onclick="navigator.clipboard.writeText('chrome://settings/content/popups').then(function(){}).catch(function(){})">COPY SETTINGS URL</button></body></html>`);a.document.close();}
+    }
+
+    function gRounds() { try { let s=localStorage.getItem(RKEY); return s ? parseInt(s) : 3; } catch(e){ return 3; } }
+    function gLimit() { try { let s=localStorage.getItem(LKEY); if(!s) return 0; let v=parseInt(s); return (isNaN(v)||v<0) ? 0 : v; } catch(e){ return 0; } }
+
+    function saveRoundSetting() {
+        let inp = document.getElementById('roundInput');
+        let linp = document.getElementById('limitInput');
+        let cf = document.getElementById('saveConfirm');
+        let v = parseInt(inp.value); if(isNaN(v)||v<1) v=1; if(v>100) v=100;
+        inp.value = v; localStorage.setItem(RKEY, v);
+        let lv = parseInt(linp.value);
+        if(isNaN(lv) || lv < 0) lv = 0;
+        if(lv > 9999) lv = 9999;
+        linp.value = lv; localStorage.setItem(LKEY, lv);
+        document.getElementById('roundDisplay').innerText = v;
+        document.getElementById('limitDisplay').innerText = (lv === 0) ? '∞' : lv;
+        cf.innerText = 'Saved: ' + v + ' round(s) · limit ' + (lv===0?'∞':lv);
+        setTimeout(()=>cf.innerText='',2500);
+    }
+
+    function loadRounds() {
+        let r = gRounds(); let l = gLimit();
+        document.getElementById('roundInput').value = r;
+        document.getElementById('limitInput').value = l;
+        document.getElementById('roundDisplay').innerText = r;
+        document.getElementById('limitDisplay').innerText = (l === 0) ? '∞' : l;
+    }
+
+    let running = false;
+    function startAutoClick() {
+        if(running){alert('Already running!');return;}
+        let btns = document.querySelectorAll('.offer-btn');
+        if(!btns.length){alert('No buttons!');return;}
+        let rds = gRounds(); let lim = gLimit();
+        let totalPossible = btns.length * rds;
+        let maxClicks = (lim === 0 || lim > totalPossible) ? totalPossible : lim;
+        let st = document.getElementById('autoStatus'), sBtn = document.getElementById('autoClickBtn');
+        running = true; sBtn.disabled = true; sBtn.textContent = 'CLICKING...';
+        let cur = 0, round = 1, idx = 0;
+        st.textContent = 'Round 1/'+rds+' · 0/'+maxClicks + (lim===0?' (∞)':' (limit '+lim+')');
+        let t = setInterval(() => {
+            if(cur >= maxClicks){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks' + (lim>0 && lim<totalPossible ? ' (limit reached)' : '');
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(round > rds){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks ('+btns.length+'×'+rds+')';
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(idx >= btns.length){
+                round++; idx = 0;
+                if(round > rds) return;
+                st.textContent = 'Round '+round+'/'+rds+' · '+cur+'/'+maxClicks;
+                return;
+            }
+            let b = btns[idx], bid = b.id, url = b.href || b.getAttribute('href');
+            if(url){
+                let a = document.createElement('a');
+                a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
+                cur++;
+                if(bid && cMap.hasOwnProperty(bid)) inc(bid);
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' OK';
+            } else {
+                cur++;
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' SKIP';
+            }
+            idx++;
+        }, 2000);
+    }
+
+    for(let i=1;i<=btnsTotal;i++){let b=document.getElementById('btn_'+i);if(b)b.addEventListener('click',()=>inc('btn_'+i));}
+    lCounts();loadRounds();refresh();
+</script>
+</body>
+</html>
